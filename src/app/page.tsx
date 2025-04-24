@@ -141,7 +141,7 @@ export default function Home() {
                   <FaGlassCheers className="text-3xl md:text-4xl text-amber-500" />
                 </div>
                 <h3 className="text-xl md:text-3xl font-bold text-gray-900 mb-2 text-center relative z-10 tracking-tight">BRAND PARTY</h3>
-                <p className="text-sm md:text-base text-gray-600 text-center relative z-10 mt-2">브랜드의 가치를 높이는 브랜드 파티 운영</p>
+                <p className="text-sm md:text-base text-gray-600 text-center relative z-10 mt-2">브랜드의 스토리를 담은 브랜드 파티 운영</p>
               </div>
               <div className="flex flex-col items-center p-6 md:p-8 bg-white rounded-xl shadow-lg transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl relative overflow-hidden group">
                 <div className="absolute inset-0 bg-gradient-to-b from-emerald-50 to-transparent opacity-50"></div>
