@@ -64,9 +64,6 @@ export default function Home() {
           </h1>
           <p className="text-xl text-gray-300 mb-8">사람과 기회를 연결하여, 더 나은 내일을 함께 만듭니다.</p>
           <div className="space-x-4">
-            <button onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} className="bg-white text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition-colors">
-              문의하기
-            </button>
             <button onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })} className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors">
               더 알아보기
             </button>
