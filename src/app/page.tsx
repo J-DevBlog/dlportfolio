@@ -89,15 +89,18 @@ export default function Home() {
         <div className="container mx-auto px-4 max-w-5xl">
           <h2 className="text-3xl md:text-5xl font-extrabold text-center mb-8 md:mb-16 text-gray-900">About Us</h2>
           <div className="mx-auto text-center px-4">
-            <p className="text-lg md:text-xl font-semibold text-gray-700 mb-4">
+            <p className="text-base md:text-xl font-semibold text-gray-700 mb-4">
               우리는 사람의 잠재력을 믿고, 그 가능성을 현실로 연결합니다.
             </p>
-            <p className="text-lg md:text-xl font-semibold text-gray-700 mb-4">
+            <p className="text-base md:text-xl font-semibold text-gray-700 mb-4">
               변화하는 시대 속에서 유연하게 움직이며, <span className="text-orange-500">진심</span>과 <span className="text-orange-500">신뢰</span>를 바탕으로
             </p>
-            <p className="text-lg md:text-xl font-semibold text-gray-700 mb-8 md:mb-16">
+            <p className="text-base md:text-xl font-semibold text-gray-700">
               최고의 인재와 기회를 이어주는
-              <span className="text-lg md:text-xl font-bold text-white bg-navy-600 px-2 py-1 rounded ml-1" style={{ backgroundColor: '#1a365d' }}>Creative Partner</span>입니다.
+            </p>
+            <p className="mt-2">
+              <span className="text-base md:text-xl font-bold text-white bg-[#1a365d] px-3 py-1 rounded inline-block">Creative Partner</span>
+              <span className="text-base md:text-xl font-semibold text-gray-700">입니다.</span>
             </p>
           </div>
         </div>
@@ -160,29 +163,29 @@ export default function Home() {
             {/* 하위 3개 항목 */}
             <div className="max-w-5xl mx-auto">
               <h4 className="text-xl font-semibold text-gray-600 mb-8 text-center">Support Service</h4>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-                <div className="flex flex-col items-center p-4 md:p-6 bg-white rounded-lg shadow transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg relative overflow-hidden group">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+                <div className="flex flex-col items-center p-3 md:p-5 bg-white rounded-lg shadow transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg relative overflow-hidden group">
                   <div className="absolute inset-0 bg-gradient-to-b from-purple-50/50 to-transparent opacity-50"></div>
-                  <div className="w-16 h-16 md:w-20 md:h-20 bg-purple-100 rounded-full flex items-center justify-center mb-3 md:mb-4 relative z-10 transform transition-transform group-hover:scale-110">
-                    <MdGroups className="text-3xl md:text-4xl text-purple-500" />
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-purple-100 rounded-full flex items-center justify-center mb-2 md:mb-3 relative z-10 transform transition-transform group-hover:scale-110">
+                    <MdGroups className="text-2xl md:text-3xl text-purple-500" />
                   </div>
-                  <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3 text-center relative z-10">인력 컨설팅</h3>
+                  <h3 className="text-base md:text-lg font-bold text-gray-900 mb-1 md:mb-2 text-center relative z-10">인력 컨설팅</h3>
                   <p className="text-xs md:text-sm text-gray-600 text-center relative z-10">전문성과 경험을 갖춘 최적의 인재 매칭</p>
                 </div>
-                <div className="flex flex-col items-center p-4 md:p-6 bg-white rounded-lg shadow transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg relative overflow-hidden group">
+                <div className="flex flex-col items-center p-3 md:p-5 bg-white rounded-lg shadow transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg relative overflow-hidden group">
                   <div className="absolute inset-0 bg-gradient-to-b from-indigo-50/50 to-transparent opacity-50"></div>
-                  <div className="w-16 h-16 md:w-20 md:h-20 bg-indigo-100 rounded-full flex items-center justify-center mb-3 md:mb-4 relative z-10 transform transition-transform group-hover:scale-110">
-                    <MdSupervisorAccount className="text-3xl md:text-4xl text-indigo-500" />
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-2 md:mb-3 relative z-10 transform transition-transform group-hover:scale-110">
+                    <MdSupervisorAccount className="text-2xl md:text-3xl text-indigo-500" />
                   </div>
-                  <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3 text-center relative z-10">슈퍼바이저</h3>
+                  <h3 className="text-base md:text-lg font-bold text-gray-900 mb-1 md:mb-2 text-center relative z-10">슈퍼바이저</h3>
                   <p className="text-xs md:text-sm text-gray-600 text-center relative z-10">체계적인 현장 관리로 최상의 서비스 제공</p>
                 </div>
-                <div className="flex flex-col items-center p-4 md:p-6 bg-white rounded-lg shadow transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg relative overflow-hidden group">
+                <div className="flex flex-col items-center p-3 md:p-5 bg-white rounded-lg shadow transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg relative overflow-hidden group">
                   <div className="absolute inset-0 bg-gradient-to-b from-rose-50/50 to-transparent opacity-50"></div>
-                  <div className="w-16 h-16 md:w-20 md:h-20 bg-rose-100 rounded-full flex items-center justify-center mb-3 md:mb-4 relative z-10 transform transition-transform group-hover:scale-110">
-                    <FaStar className="text-3xl md:text-4xl text-rose-500" />
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-rose-100 rounded-full flex items-center justify-center mb-2 md:mb-3 relative z-10 transform transition-transform group-hover:scale-110">
+                    <FaStar className="text-2xl md:text-3xl text-rose-500" />
                   </div>
-                  <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3 text-center relative z-10">프로모터</h3>
+                  <h3 className="text-base md:text-lg font-bold text-gray-900 mb-1 md:mb-2 text-center relative z-10">프로모터</h3>
                   <p className="text-xs md:text-sm text-gray-600 text-center relative z-10">브랜드의 얼굴로 고객을 현장에서 연결하는<br />서비스</p>
                 </div>
               </div>
