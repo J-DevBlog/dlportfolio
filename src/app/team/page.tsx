@@ -17,13 +17,13 @@ export default function Team() {
               각 분야의 전문성과 풍부한 경험을 바탕으로 최상의 서비스를 제공합니다
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
               <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden bg-gray-200">
                 {/* Add team member photo here */}
                 <div className="w-full h-full bg-gray-300"></div>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">홍길동</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">이동관</h3>
               <p className="text-gray-600 mb-2">CEO</p>
               <p className="text-gray-500 text-sm">
                 15년간의 HR 컨설팅 경험을 바탕으로<br />
@@ -35,23 +35,11 @@ export default function Team() {
                 {/* Add team member photo here */}
                 <div className="w-full h-full bg-gray-300"></div>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">김철수</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">박진수</h3>
               <p className="text-gray-600 mb-2">COO</p>
               <p className="text-gray-500 text-sm">
                 현장 운영 전문가로서<br />
                 체계적인 프로젝트 관리를 담당합니다.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden bg-gray-200">
-                {/* Add team member photo here */}
-                <div className="w-full h-full bg-gray-300"></div>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">이영희</h3>
-              <p className="text-gray-600 mb-2">Director</p>
-              <p className="text-gray-500 text-sm">
-                10년 이상의 마케팅 경험으로<br />
-                효과적인 프로모션 전략을 수립합니다.
               </p>
             </div>
           </div>

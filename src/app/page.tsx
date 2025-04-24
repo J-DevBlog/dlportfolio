@@ -17,15 +17,6 @@ export default function Home() {
     message: ''
   });
 
-  // Test function to preview loading screen
-  const toggleLoading = () => {
-    setIsLoading(true);
-    // Reset loading state after 3 seconds
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3000);
-  };
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > window.innerHeight * 0.5) {
@@ -64,14 +55,6 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 snap-y snap-mandatory overflow-y-scroll">
       <Navigation />
-
-      {/* Preview button - only visible during development */}
-      <button
-        onClick={toggleLoading}
-        className="fixed bottom-4 right-4 bg-gray-900 text-white px-4 py-2 rounded-md z-50 hover:bg-gray-800 transition-colors"
-      >
-        Preview Loading
-      </button>
 
       {/* Hero Section */}
       <section className="h-screen flex items-center justify-center bg-gradient-to-b from-gray-900 to-gray-800 snap-start relative">
