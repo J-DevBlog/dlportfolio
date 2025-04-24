@@ -1,19 +1,15 @@
 'use client';
 
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FaUsers } from 'react-icons/fa';
 import { MdSupervisorAccount } from 'react-icons/md';
-import { FaStar, FaArrowUp, FaEnvelope, FaChevronDown, FaSun, FaMoon } from 'react-icons/fa';
+import { FaStar, FaArrowUp, FaEnvelope } from 'react-icons/fa';
 import Navigation from '@/components/Navigation';
 import Loading from '@/components/Loading';
 
 export default function Home() {
-  const [showNav, setShowNav] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
-  const [showAboutDropdown, setShowAboutDropdown] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
@@ -33,10 +29,8 @@ export default function Home() {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > window.innerHeight * 0.5) {
-        setShowNav(true);
         setShowScrollTop(true);
       } else {
-        setShowNav(false);
         setShowScrollTop(false);
       }
     };
@@ -44,14 +38,6 @@ export default function Home() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [isDarkMode]);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
