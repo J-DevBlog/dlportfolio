@@ -36,7 +36,7 @@ export default function Team() {
                 <div className="w-full h-full bg-gray-300"></div>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2">박진수</h3>
-              <p className="text-gray-600 mb-2">COO</p>
+              <p className="text-gray-600 mb-2">COO / Developer</p>
               <p className="text-gray-500 text-sm">
                 현장 운영 전문가로서<br />
                 체계적인 프로젝트 관리를 담당합니다.
@@ -49,13 +49,13 @@ export default function Team() {
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-white text-lg font-semibold mb-4">DL active</h3>
-            <p className="mb-2">서울특시 강남구 테헤란로 123</p>
-            <p>사업자등록번호: 123-45-67890</p>
+            <p className="mb-2">서울특별시 강남구 선릉로 76길, 12 801호</p>
+            <p>사업자등록번호: 275-81-03333</p>
           </div>
           <div>
             <h3 className="text-white text-lg font-semibold mb-4">Contact</h3>
-            <p className="mb-2">Tel: 02-123-4567</p>
-            <p>Email: your.email@example.com</p>
+            <p className="mb-2">Tel: +82 10-5127-6476</p>
+            <p>Email: admin@dlactive.com</p>
           </div>
           <div>
             <h3 className="text-white text-lg font-semibold mb-4">Legal</h3>
@@ -65,6 +65,7 @@ export default function Team() {
         </div>
         <div className="container mx-auto px-4 mt-8 pt-8 border-t border-gray-800">
           <p className="text-center text-sm">© 2025 DL active. All rights reserved.</p>
+          <p className="text-center text-sm mt-2">Made by Jeun, DL active dev team</p>
         </div>
       </footer>
     </div>
