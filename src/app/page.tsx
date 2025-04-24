@@ -234,14 +234,6 @@ export default function Home() {
               <p className="text-xl text-gray-600 mb-8 font-semibold">
                 Email: your.email@example.com
               </p>
-              <div className="space-x-8">
-                <a href="https://github.com" className="text-xl text-gray-600 hover:text-gray-900 transition-colors">
-                  GitHub
-                </a>
-                <a href="https://linkedin.com" className="text-xl text-gray-600 hover:text-gray-900 transition-colors">
-                  LinkedIn
-                </a>
-              </div>
             </div>
           </div>
         </div>
