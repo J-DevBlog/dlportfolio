@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { FaUsers, FaStar, FaArrowUp, FaEnvelope, FaMusic, FaStore, FaGlassCheers, FaBuilding } from 'react-icons/fa';
-import { MdSupervisorAccount, MdGroups, MdEventAvailable } from 'react-icons/md';
+import { FaStar, FaArrowUp, FaEnvelope, FaMusic, FaStore, FaGlassCheers, FaBuilding } from 'react-icons/fa';
+import { MdSupervisorAccount, MdGroups } from 'react-icons/md';
 import Navigation from '@/components/Navigation';
 import Loading from '@/components/Loading';
 

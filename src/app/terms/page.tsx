@@ -15,7 +15,7 @@ export default function Terms() {
           <section>
             <h2 className="text-2xl font-bold text-gray-800 mb-4">제1조 (목적)</h2>
             <p className="text-gray-600 leading-relaxed">
-              이 약관은 DL active(이하 '회사')가 제공하는 서비스의 이용조건 및 절차, 회사와 이용자의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.
+              이 약관은 DL active(이하 &apos;회사&apos;)가 제공하는 서비스의 이용조건 및 절차, 회사와 이용자의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.
             </p>
           </section>
 

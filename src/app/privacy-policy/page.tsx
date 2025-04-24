@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-2xl font-bold text-gray-800 mb-4">1. 개인정보의 처리 목적</h2>
             <p className="text-gray-600 leading-relaxed">
-              DL active(이하 '회사')는 다음의 목적을 위하여 개인정보를 처리하고 있으며, 다음의 목적 이외의 용도로는 이용하지 않습니다.
+              DL active(이하 &apos;회사&apos;)는 다음의 목적을 위하여 개인정보를 처리하고 있으며, 다음의 목적 이외의 용도로는 이용하지 않습니다.
             </p>
             <ul className="list-disc list-inside mt-4 space-y-2 text-gray-600">
               <li>고객 문의 응대 및 서비스 제공</li>
