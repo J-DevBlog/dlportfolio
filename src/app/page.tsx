@@ -89,18 +89,15 @@ export default function Home() {
         <div className="container mx-auto px-4 max-w-5xl">
           <h2 className="text-3xl md:text-5xl font-extrabold text-center mb-8 md:mb-16 text-gray-900">About Us</h2>
           <div className="mx-auto text-center px-4">
-            <p className="text-base md:text-xl font-semibold text-gray-700 mb-4">
+            <p className="text-lg md:text-xl font-medium md:font-semibold text-gray-800 md:text-gray-700 mb-8 md:mb-4 leading-relaxed md:leading-normal">
               우리는 사람의 잠재력을 믿고, 그 가능성을 현실로 연결합니다.
             </p>
-            <p className="text-base md:text-xl font-semibold text-gray-700 mb-4">
+            <p className="text-lg md:text-xl font-medium md:font-semibold text-gray-800 md:text-gray-700 mb-8 md:mb-4 leading-relaxed md:leading-normal">
               변화하는 시대 속에서 유연하게 움직이며, <span className="text-orange-500">진심</span>과 <span className="text-orange-500">신뢰</span>를 바탕으로
             </p>
-            <p className="text-base md:text-xl font-semibold text-gray-700">
+            <p className="text-lg md:text-xl font-medium md:font-semibold text-gray-800 md:text-gray-700 mb-8 md:mb-16">
               최고의 인재와 기회를 이어주는
-            </p>
-            <p className="mt-2">
-              <span className="text-base md:text-xl font-bold text-white bg-[#1a365d] px-3 py-1 rounded inline-block">Creative Partner</span>
-              <span className="text-base md:text-xl font-semibold text-gray-700">입니다.</span>
+              <span className="text-lg md:text-xl font-bold text-white bg-navy-600 px-2 py-1 rounded ml-1" style={{ backgroundColor: '#1a365d' }}>Creative Partner</span>입니다.
             </p>
           </div>
         </div>
