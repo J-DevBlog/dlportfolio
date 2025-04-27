@@ -24,7 +24,7 @@
 body, html {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-start-rgb));
-  font-family: 'Pretendard', 'Noto Sans KR', Helvetica, Arial, sans-serif;
+  font-family: 'Pretendard', 'Noto Sans KR', Helvetica, Arial, sans-serif !important;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
