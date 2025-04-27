@@ -40,16 +40,16 @@ export default function Navigation() {
   };
 
   return (
-    <nav className={`fixed w-full bg-[#2D3441] z-50 transition-transform duration-300 ${showNav ? 'translate-y-0' : '-translate-y-full'}`}>
+    <nav className={`fixed w-full bg-[#FFFBEF] z-50 transition-transform duration-300 ${showNav ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="text-2xl font-bold text-white">
+          <Link href="/" className="text-2xl font-bold text-[#a89b8e]">
             DL active
           </Link>
           
           {/* Mobile menu button */}
           <button
-            className="md:hidden text-gray-300 hover:text-white"
+            className="md:hidden text-[#a89b8e] hover:text-[#bfae99]"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
@@ -62,21 +62,21 @@ export default function Navigation() {
               onMouseEnter={() => setShowAboutDropdown(true)}
               onMouseLeave={() => setShowAboutDropdown(false)}
             >
-              <button className="text-gray-300 hover:text-white flex items-center">
+              <button className="text-[#a89b8e] hover:text-[#bfae99] flex items-center">
                 About <FaChevronDown className="ml-1 text-sm" />
               </button>
-              <div className={`absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 transition-all duration-200 ${
+              <div className={`absolute left-0 mt-2 w-48 bg-[#f8f9fc] rounded-md shadow-lg py-1 transition-all duration-200 ${
                 showAboutDropdown ? 'opacity-100 visible' : 'opacity-0 invisible'
               }`}>
                 <button 
                   onClick={() => scrollToSection('about')}
-                  className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  className="block w-full text-left px-4 py-2 text-sm text-[#a89b8e] hover:bg-[#f0e9dd] hover:text-[#bfae99]"
                 >
                   About Us
                 </button>
                 <Link 
                   href="/team" 
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  className="block px-4 py-2 text-sm text-[#a89b8e] hover:bg-[#f0e9dd] hover:text-[#bfae99]"
                   onClick={() => setShowAboutDropdown(false)}
                 >
                   Team
@@ -85,19 +85,19 @@ export default function Navigation() {
             </div>
             <button 
               onClick={() => scrollToSection('business')}
-              className="text-gray-300 hover:text-white"
+              className="text-[#a89b8e] hover:text-[#bfae99]"
             >
               Business
             </button>
             <button 
               onClick={() => scrollToSection('projects')}
-              className="text-gray-300 hover:text-white"
+              className="text-[#a89b8e] hover:text-[#bfae99]"
             >
               Projects
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="text-gray-300 hover:text-white"
+              className="text-[#a89b8e] hover:text-[#bfae99]"
             >
               Contact
             </button>
@@ -112,20 +112,20 @@ export default function Navigation() {
             <div className="relative">
               <button
                 onClick={() => setShowAboutDropdown(!showAboutDropdown)}
-                className="text-gray-300 hover:text-white flex items-center justify-between w-full"
+                className="text-[#a89b8e] hover:text-[#bfae99] flex items-center justify-between w-full"
               >
                 About <FaChevronDown className={`transition-transform duration-200 ${showAboutDropdown ? 'rotate-180' : ''}`} />
               </button>
               <div className={`mt-2 space-y-2 pl-4 ${showAboutDropdown ? 'block' : 'hidden'}`}>
                 <button 
                   onClick={() => scrollToSection('about')}
-                  className="block text-gray-300 hover:text-white w-full text-left"
+                  className="block text-[#a89b8e] hover:text-[#bfae99] w-full text-left"
                 >
                   About Us
                 </button>
                 <Link 
                   href="/team" 
-                  className="block text-gray-300 hover:text-white"
+                  className="block text-[#a89b8e] hover:text-[#bfae99]"
                   onClick={() => {
                     setShowAboutDropdown(false);
                     setIsMobileMenuOpen(false);
@@ -137,19 +137,19 @@ export default function Navigation() {
             </div>
             <button 
               onClick={() => scrollToSection('business')}
-              className="text-gray-300 hover:text-white text-left"
+              className="text-[#a89b8e] hover:text-[#bfae99] text-left"
             >
               Business
             </button>
             <button 
               onClick={() => scrollToSection('projects')}
-              className="text-gray-300 hover:text-white text-left"
+              className="text-[#a89b8e] hover:text-[#bfae99] text-left"
             >
               Projects
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="text-gray-300 hover:text-white text-left"
+              className="text-[#a89b8e] hover:text-[#bfae99] text-left"
             >
               Contact
             </button>

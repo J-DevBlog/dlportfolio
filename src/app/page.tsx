@@ -52,18 +52,20 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 snap-y snap-mandatory overflow-y-scroll">
+    <div className="min-h-screen bg-[#FFFBEF] snap-y snap-mandatory overflow-y-scroll">
       <Navigation />
 
       {/* Hero Section */}
-      <section className="h-screen flex items-center justify-center bg-gradient-to-b from-gray-900 to-gray-800 snap-start relative">
+      <section className="h-screen flex items-center justify-center bg-[#FFFBEF] snap-start relative">
         <div className="text-center">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4 md:mb-6">
-            디엘 <span className="text-2xl md:text-4xl">active</span>
+          <h1 className="text-4xl md:text-6xl font-black text-[#222] mb-4 md:mb-6 tracking-tight font-[pretendard]">
+            DL <span className="text-2xl md:text-4xl text-[#3d2b1f] font-black">active</span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-300 mb-6 md:mb-8 px-4">사람과 기회를 연결하여, 더 나은 내일을 함께 만듭니다.</p>
+          <p className="text-lg md:text-2xl text-[#222] mb-6 md:mb-8 leading-normal font-[pretendard] font-extrabold">
+            사람과 기회를 연결하여, 더 나은 내일을 함께 만듭니다.
+          </p>
           <div className="space-x-4">
-            <button onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })} className="bg-transparent border-2 border-white text-white px-4 md:px-6 py-2 md:py-3 rounded-full font-semibold hover:bg-white/10 transition-colors text-sm md:text-base">
+            <button onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })} className="bg-[#222] border-2 border-[#222] text-[#FFFBEF] px-4 md:px-6 py-2 md:py-3 rounded-full font-black hover:bg-[#3d2b1f] hover:border-[#3d2b1f] hover:text-[#FFFBEF] transition-colors text-sm md:text-base">
               더 알아보기
             </button>
           </div>
@@ -76,26 +78,26 @@ export default function Home() {
         `}</style>
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center">
           <div className="flex flex-col items-center mb-2" style={{ gap: '-0.1rem' }}>
-            <div className="text-white text-sm" style={{ transform: 'scaleX(6)', animation: 'blink 1.5s infinite', animationDelay: '0s' }}>∨</div>
-            <div className="text-white text-sm" style={{ transform: 'scaleX(6)', animation: 'blink 1.5s infinite', animationDelay: '0.2s' }}>∨</div>
-            <div className="text-white text-sm" style={{ transform: 'scaleX(6)', animation: 'blink 1.5s infinite', animationDelay: '0.4s' }}>∨</div>
+            <div className="text-black text-sm" style={{ transform: 'scaleX(6)', animation: 'blink 1.5s infinite', animationDelay: '0s' }}>∨</div>
+            <div className="text-black text-sm" style={{ transform: 'scaleX(6)', animation: 'blink 1.5s infinite', animationDelay: '0.2s' }}>∨</div>
+            <div className="text-black text-sm" style={{ transform: 'scaleX(6)', animation: 'blink 1.5s infinite', animationDelay: '0.4s' }}>∨</div>
           </div>
-          <span className="text-white text-xs tracking-widest font-thin" style={{ fontFamily: "'Helvetica Neue', sans-serif", letterSpacing: '0.4em' }}>SCROLL</span>
+          <span className="text-black text-xs tracking-widest font-thin" style={{ fontFamily: "'Helvetica Neue', sans-serif", letterSpacing: '0.4em' }}>SCROLL</span>
         </div>
       </section>
 
       {/* About Section */}
       <section id="about" className="min-h-screen py-32 flex items-center bg-[#f0f2f7] snap-start">
         <div className="container mx-auto px-4 max-w-5xl">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-center mb-8 md:mb-16 text-gray-900">About Us</h2>
+          <h2 className="text-3xl md:text-5xl font-black text-center mb-8 md:mb-16 text-[#222]">About Us</h2>
           <div className="mx-auto text-center px-0 md:px-4">
-            <p className="text-lg md:text-xl font-medium md:font-semibold text-gray-800 md:text-gray-700 mb-6 md:mb-4 leading-relaxed md:leading-normal whitespace-pre-line px-4">
+            <p className="text-lg md:text-xl font-extrabold text-[#222] mb-6 md:mb-4 leading-relaxed md:leading-normal whitespace-pre-line px-4">
               우리는 사람의 잠재력을 믿고,{'\n'}그 가능성을 현실로 연결합니다.
             </p>
-            <p className="text-lg md:text-xl font-medium md:font-semibold text-gray-800 md:text-gray-700 mb-6 md:mb-4 leading-relaxed md:leading-normal whitespace-pre-line px-4">
+            <p className="text-lg md:text-xl font-extrabold text-[#222] mb-6 md:mb-4 leading-relaxed md:leading-normal whitespace-pre-line px-4">
               변화하는 시대 속에서{'\n'}유연하게 움직이며,{'\n'}<span className="text-orange-500">진심</span>과 <span className="text-orange-500">신뢰</span>를 바탕으로
             </p>
-            <p className="text-lg md:text-xl font-medium md:font-semibold text-gray-800 md:text-gray-700 mb-4 md:mb-16 whitespace-pre-line px-4">
+            <p className="text-lg md:text-xl font-extrabold text-[#222] mb-4 md:mb-16 whitespace-pre-line px-4">
               최고의 인재와 기회를 이어주는{'\n'}
               <span className="text-lg md:text-xl font-bold text-white bg-navy-600 px-3 py-1 rounded inline-block my-2" style={{ backgroundColor: '#1a365d' }}>Creative Partner</span>
               {'\n'}입니다.
@@ -268,25 +270,25 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#1a1f27] text-gray-400 py-16">
+      <footer className="bg-[#FFFBEF] text-[#a89b8e] py-16">
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-white text-lg font-semibold mb-4">DL active</h3>
+            <h3 className="text-[#a89b8e] text-lg font-semibold mb-4">DL active</h3>
             <p className="mb-2">서울특별시 강남구 선릉로 76길, 12 801호</p>
             <p>사업자등록번호: 275-81-03333</p>
           </div>
           <div>
-            <h3 className="text-white text-lg font-semibold mb-4">Contact</h3>
+            <h3 className="text-[#a89b8e] text-lg font-semibold mb-4">Contact</h3>
             <p className="mb-2">Tel: +82 10-5127-6476</p>
             <p>Email: admin@dlactive.com</p>
           </div>
           <div>
-            <h3 className="text-white text-lg font-semibold mb-4">Legal</h3>
-            <Link href="/privacy-policy" className="block mb-2 hover:text-white transition-colors">개인정보처리방침</Link>
-            <Link href="/terms" className="block hover:text-white transition-colors">이용약관</Link>
+            <h3 className="text-[#a89b8e] text-lg font-semibold mb-4">Legal</h3>
+            <Link href="/privacy-policy" className="block mb-2 hover:text-[#bfae99] transition-colors">개인정보처리방침</Link>
+            <Link href="/terms" className="block hover:text-[#bfae99] transition-colors">이용약관</Link>
           </div>
         </div>
-        <div className="container mx-auto px-4 mt-8 pt-8 border-t border-gray-800">
+        <div className="container mx-auto px-4 mt-8 pt-8 border-t border-[#bfae99]">
           <p className="text-center text-sm">© 2025 DL active. All rights reserved.</p>
           <p className="text-center text-sm mt-2">Made by Jeun, DL active dev team</p>
         </div>
