@@ -87,20 +87,30 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="min-h-screen py-32 flex items-center bg-[#f0f2f7] snap-start">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <h2 className="text-3xl md:text-5xl font-black text-center mb-8 md:mb-16 text-[#222]">About Us</h2>
-          <div className="mx-auto text-center px-0 md:px-4">
-            <p className="text-lg md:text-xl font-extrabold text-[#222] mb-6 md:mb-4 leading-relaxed md:leading-normal whitespace-pre-line px-4">
-              우리는 사람의 잠재력을 믿고,{'\n'}그 가능성을 현실로 연결합니다.
+      <section id="about" className="min-h-screen pt-32 pb-16 flex items-start bg-[#FFFBEF] snap-start">
+        <div className="container ml-0 px-4 max-w-5xl">
+          <div className="text-black text-4xl md:text-6xl font-black tracking-widest mb-20 uppercase text-left drop-shadow">
+            ABOUT US
+          </div>
+          <div className="space-y-12 text-left">
+            <p className="text-3xl md:text-5xl font-black text-black">
+              최고의 인재와 기회를 이어주는<br />
+              <span className="underline decoration-green-700 decoration-4 underline-offset-4">Creative Partner</span>
             </p>
-            <p className="text-lg md:text-xl font-extrabold text-[#222] mb-6 md:mb-4 leading-relaxed md:leading-normal whitespace-pre-line px-4">
-              변화하는 시대 속에서{'\n'}유연하게 움직이며,{'\n'}<span className="text-orange-500">진심</span>과 <span className="text-orange-500">신뢰</span>를 바탕으로
+            <p className="text-3xl md:text-5xl font-black text-black">
+              고객사의 입장에 서서 공감을 통해 진실과 신뢰를 바탕으로 완벽한 행사를 함께 만들어내는
             </p>
-            <p className="text-lg md:text-xl font-extrabold text-[#222] mb-4 md:mb-16 whitespace-pre-line px-4">
-              최고의 인재와 기회를 이어주는{'\n'}
-              <span className="text-lg md:text-xl font-bold text-white bg-navy-600 px-3 py-1 rounded inline-block my-2" style={{ backgroundColor: '#1a365d' }}>Creative Partner</span>
-              {'\n'}입니다.
+            <p className="text-3xl md:text-5xl font-black text-black mt-8">
+              <span
+                className="font-black text-7xl md:text-8xl text-transparent"
+                style={{
+                  WebkitTextStroke: '2px #3d2b1f',
+                  color: 'transparent',
+                  display: 'inline-block',
+                }}
+              >
+                "DL ACTIVE"
+              </span>
             </p>
           </div>
         </div>
@@ -109,84 +119,84 @@ export default function Home() {
       {/* Skills Section */}
       <section id="business" className="min-h-screen py-32 flex items-center justify-center bg-[#f8f9fc] snap-start">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-center mb-8 md:mb-16 text-gray-900">Our Business</h2>
+          <h2 className="text-3xl md:text-5xl font-black text-center mb-8 md:mb-16 text-[#3d2b1f]">Our Business</h2>
           <div className="max-w-5xl mx-auto">
             <div className="flex justify-center">
-              <div className="flex flex-col items-center p-4 bg-white rounded-xl shadow-lg transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl relative overflow-hidden group mb-8 md:mb-12 inline-block">
-                <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-transparent opacity-50"></div>
-                <h3 className="text-2xl md:text-3xl font-bold text-center text-gray-800 relative z-10 px-4">현장운영대행</h3>
+              <div className="flex flex-col items-center p-4 bg-[#FFFBEF] rounded-xl shadow-lg transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl relative overflow-hidden group mb-8 md:mb-12 inline-block">
+                <div className="absolute inset-0 bg-gradient-to-b from-[#f8f9fc] to-transparent opacity-50"></div>
+                <h3 className="text-2xl md:text-3xl font-bold text-center text-[#3d2b1f] relative z-10 px-4 tracking-tight">현장운영대행</h3>
               </div>
             </div>
             <div className="relative flex justify-center mb-8 md:mb-16">
-              <div className="absolute h-16 w-0.5 bg-gray-300"></div>
+              <div className="w-32 h-0.5 bg-[#bfae99]"></div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-8 mb-16">
-              <div className="flex flex-col items-center p-6 md:p-8 bg-white rounded-xl shadow-lg transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl relative overflow-hidden group">
-                <div className="absolute inset-0 bg-gradient-to-b from-red-50 to-transparent opacity-50"></div>
-                <div className="w-16 h-16 md:w-20 md:h-20 bg-red-100 rounded-full flex items-center justify-center mb-4 md:mb-6 relative z-10 transform transition-transform group-hover:scale-110">
-                  <FaMusic className="text-3xl md:text-4xl text-red-500" />
+              <div className="flex flex-col items-center p-6 md:p-8 bg-[#FFFBEF] rounded-xl shadow-lg transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl relative overflow-hidden group">
+                <div className="absolute inset-0 bg-gradient-to-b from-[#f8f9fc] to-transparent opacity-50"></div>
+                <div className="w-16 h-16 md:w-20 md:h-20 bg-[#bfae99] rounded-full flex items-center justify-center mb-4 md:mb-6 relative z-10 transform transition-transform group-hover:scale-110">
+                  <FaMusic className="text-3xl md:text-4xl text-[#FFFBEF]" />
                 </div>
-                <h3 className="text-xl md:text-3xl font-bold text-gray-900 mb-2 text-center relative z-10 tracking-tight">FESTIVAL & CONCERT</h3>
-                <p className="text-sm md:text-base text-gray-600 text-center relative z-10 mt-2">페스티벌과 콘서트의 성공적인 운영을 위한 전문 서비스</p>
+                <h3 className="text-xl md:text-3xl font-bold text-[#3d2b1f] mb-2 text-center relative z-10 tracking-tight">FESTIVAL & CONCERT</h3>
+                <p className="text-sm md:text-base text-[#6b4c1b] text-center relative z-10 mt-2">페스티벌과 콘서트의 성공적인 운영을 위한 전문 서비스</p>
               </div>
-              <div className="flex flex-col items-center p-6 md:p-8 bg-white rounded-xl shadow-lg transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl relative overflow-hidden group">
-                <div className="absolute inset-0 bg-gradient-to-b from-blue-50 to-transparent opacity-50"></div>
-                <div className="w-16 h-16 md:w-20 md:h-20 bg-blue-100 rounded-full flex items-center justify-center mb-4 md:mb-6 relative z-10 transform transition-transform group-hover:scale-110">
-                  <FaStore className="text-3xl md:text-4xl text-blue-500" />
+              <div className="flex flex-col items-center p-6 md:p-8 bg-[#FFFBEF] rounded-xl shadow-lg transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl relative overflow-hidden group">
+                <div className="absolute inset-0 bg-gradient-to-b from-[#f8f9fc] to-transparent opacity-50"></div>
+                <div className="w-16 h-16 md:w-20 md:h-20 bg-[#bfae99] rounded-full flex items-center justify-center mb-4 md:mb-6 relative z-10 transform transition-transform group-hover:scale-110">
+                  <FaStore className="text-3xl md:text-4xl text-[#FFFBEF]" />
                 </div>
-                <h3 className="text-xl md:text-3xl font-bold text-gray-900 mb-2 text-center relative z-10 tracking-tight">POP-UP STORE</h3>
-                <p className="text-sm md:text-base text-gray-600 text-center relative z-10 mt-2">브랜드의 가치를 높이는 팝업스토어 운영</p>
+                <h3 className="text-xl md:text-3xl font-bold text-[#3d2b1f] mb-2 text-center relative z-10 tracking-tight">POP-UP STORE</h3>
+                <p className="text-sm md:text-base text-[#6b4c1b] text-center relative z-10 mt-2">브랜드의 가치를 높이는 팝업스토어 운영</p>
               </div>
-              <div className="flex flex-col items-center p-6 md:p-8 bg-white rounded-xl shadow-lg transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl relative overflow-hidden group">
-                <div className="absolute inset-0 bg-gradient-to-b from-amber-50 to-transparent opacity-50"></div>
-                <div className="w-16 h-16 md:w-20 md:h-20 bg-amber-100 rounded-full flex items-center justify-center mb-4 md:mb-6 relative z-10 transform transition-transform group-hover:scale-110">
-                  <FaGlassCheers className="text-3xl md:text-4xl text-amber-500" />
+              <div className="flex flex-col items-center p-6 md:p-8 bg-[#FFFBEF] rounded-xl shadow-lg transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl relative overflow-hidden group">
+                <div className="absolute inset-0 bg-gradient-to-b from-[#f8f9fc] to-transparent opacity-50"></div>
+                <div className="w-16 h-16 md:w-20 md:h-20 bg-[#bfae99] rounded-full flex items-center justify-center mb-4 md:mb-6 relative z-10 transform transition-transform group-hover:scale-110">
+                  <FaGlassCheers className="text-3xl md:text-4xl text-[#FFFBEF]" />
                 </div>
-                <h3 className="text-xl md:text-3xl font-bold text-gray-900 mb-2 text-center relative z-10 tracking-tight">BRAND PARTY</h3>
-                <p className="text-sm md:text-base text-gray-600 text-center relative z-10 mt-2">브랜드의 스토리를 담은 브랜드 파티 운영</p>
+                <h3 className="text-xl md:text-3xl font-bold text-[#3d2b1f] mb-2 text-center relative z-10 tracking-tight">BRAND PARTY</h3>
+                <p className="text-sm md:text-base text-[#6b4c1b] text-center relative z-10 mt-2">브랜드의 스토리를 담은 브랜드 파티 운영</p>
               </div>
-              <div className="flex flex-col items-center p-6 md:p-8 bg-white rounded-xl shadow-lg transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl relative overflow-hidden group">
-                <div className="absolute inset-0 bg-gradient-to-b from-emerald-50 to-transparent opacity-50"></div>
-                <div className="w-16 h-16 md:w-20 md:h-20 bg-emerald-100 rounded-full flex items-center justify-center mb-4 md:mb-6 relative z-10 transform transition-transform group-hover:scale-110">
-                  <FaBuilding className="text-3xl md:text-4xl text-emerald-500" />
+              <div className="flex flex-col items-center p-6 md:p-8 bg-[#FFFBEF] rounded-xl shadow-lg transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl relative overflow-hidden group">
+                <div className="absolute inset-0 bg-gradient-to-b from-[#f8f9fc] to-transparent opacity-50"></div>
+                <div className="w-16 h-16 md:w-20 md:h-20 bg-[#bfae99] rounded-full flex items-center justify-center mb-4 md:mb-6 relative z-10 transform transition-transform group-hover:scale-110">
+                  <FaBuilding className="text-3xl md:text-4xl text-[#FFFBEF]" />
                 </div>
-                <h3 className="text-xl md:text-3xl font-bold text-gray-900 mb-2 text-center relative z-10 tracking-tight">CORPORATE EVENT</h3>
-                <p className="text-sm md:text-base text-gray-600 text-center relative z-10 mt-2">기업의 성공적인 이벤트를 위한 전문 운영 서비스</p>
+                <h3 className="text-xl md:text-3xl font-bold text-[#3d2b1f] mb-2 text-center relative z-10 tracking-tight">CORPORATE EVENT</h3>
+                <p className="text-sm md:text-base text-[#6b4c1b] text-center relative z-10 mt-2">기업의 성공적인 이벤트를 위한 전문 운영 서비스</p>
               </div>
             </div>
 
             {/* 구분선 */}
             <div className="relative flex justify-center mb-8 md:mb-16">
-              <div className="w-32 h-0.5 bg-gray-300"></div>
+              <div className="w-32 h-0.5 bg-[#bfae99]"></div>
             </div>
 
             {/* 하위 3개 항목 */}
             <div className="max-w-5xl mx-auto">
-              <h4 className="text-xl font-semibold text-gray-600 mb-8 text-center">Support Service</h4>
+              <h4 className="text-xl font-semibold text-[#3d2b1f] mb-8 text-center">Support Service</h4>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-                <div className="flex flex-col items-center p-3 md:p-5 bg-white rounded-lg shadow transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg relative overflow-hidden group">
-                  <div className="absolute inset-0 bg-gradient-to-b from-purple-50/50 to-transparent opacity-50"></div>
-                  <div className="w-12 h-12 md:w-16 md:h-16 bg-purple-100 rounded-full flex items-center justify-center mb-2 md:mb-3 relative z-10 transform transition-transform group-hover:scale-110">
-                    <MdGroups className="text-2xl md:text-3xl text-purple-500" />
+                <div className="flex flex-col items-center p-3 md:p-5 bg-[#FFFBEF] rounded-lg shadow transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg relative overflow-hidden group">
+                  <div className="absolute inset-0 bg-gradient-to-b from-[#f8f9fc]/50 to-transparent opacity-50"></div>
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-[#bfae99] rounded-full flex items-center justify-center mb-2 md:mb-3 relative z-10 transform transition-transform group-hover:scale-110">
+                    <MdGroups className="text-2xl md:text-3xl text-[#FFFBEF]" />
                   </div>
-                  <h3 className="text-base md:text-lg font-bold text-gray-900 mb-1 md:mb-2 text-center relative z-10">인력 컨설팅</h3>
-                  <p className="text-xs md:text-sm text-gray-600 text-center relative z-10">전문성과 경험을 갖춘 최적의 인재 매칭</p>
+                  <h3 className="text-base md:text-lg font-bold text-[#3d2b1f] mb-1 md:mb-2 text-center relative z-10">인력 컨설팅</h3>
+                  <p className="text-xs md:text-sm text-[#6b4c1b] text-center relative z-10">전문성과 경험을 갖춘 최적의 인재 매칭</p>
                 </div>
-                <div className="flex flex-col items-center p-3 md:p-5 bg-white rounded-lg shadow transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg relative overflow-hidden group">
-                  <div className="absolute inset-0 bg-gradient-to-b from-indigo-50/50 to-transparent opacity-50"></div>
-                  <div className="w-12 h-12 md:w-16 md:h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-2 md:mb-3 relative z-10 transform transition-transform group-hover:scale-110">
-                    <MdSupervisorAccount className="text-2xl md:text-3xl text-indigo-500" />
+                <div className="flex flex-col items-center p-3 md:p-5 bg-[#FFFBEF] rounded-lg shadow transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg relative overflow-hidden group">
+                  <div className="absolute inset-0 bg-gradient-to-b from-[#f8f9fc]/50 to-transparent opacity-50"></div>
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-[#bfae99] rounded-full flex items-center justify-center mb-2 md:mb-3 relative z-10 transform transition-transform group-hover:scale-110">
+                    <MdSupervisorAccount className="text-2xl md:text-3xl text-[#FFFBEF]" />
                   </div>
-                  <h3 className="text-base md:text-lg font-bold text-gray-900 mb-1 md:mb-2 text-center relative z-10">슈퍼바이저</h3>
-                  <p className="text-xs md:text-sm text-gray-600 text-center relative z-10">체계적인 현장 관리로 최상의 서비스 제공</p>
+                  <h3 className="text-base md:text-lg font-bold text-[#3d2b1f] mb-1 md:mb-2 text-center relative z-10">슈퍼바이저</h3>
+                  <p className="text-xs md:text-sm text-[#6b4c1b] text-center relative z-10">체계적인 현장 관리로 최상의 서비스 제공</p>
                 </div>
-                <div className="flex flex-col items-center p-3 md:p-5 bg-white rounded-lg shadow transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg relative overflow-hidden group">
-                  <div className="absolute inset-0 bg-gradient-to-b from-rose-50/50 to-transparent opacity-50"></div>
-                  <div className="w-12 h-12 md:w-16 md:h-16 bg-rose-100 rounded-full flex items-center justify-center mb-2 md:mb-3 relative z-10 transform transition-transform group-hover:scale-110">
-                    <FaStar className="text-2xl md:text-3xl text-rose-500" />
+                <div className="flex flex-col items-center p-3 md:p-5 bg-[#FFFBEF] rounded-lg shadow transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg relative overflow-hidden group">
+                  <div className="absolute inset-0 bg-gradient-to-b from-[#f8f9fc]/50 to-transparent opacity-50"></div>
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-[#bfae99] rounded-full flex items-center justify-center mb-2 md:mb-3 relative z-10 transform transition-transform group-hover:scale-110">
+                    <FaStar className="text-2xl md:text-3xl text-[#FFFBEF]" />
                   </div>
-                  <h3 className="text-base md:text-lg font-bold text-gray-900 mb-1 md:mb-2 text-center relative z-10">프로모터</h3>
-                  <p className="text-xs md:text-sm text-gray-600 text-center relative z-10">브랜드의 얼굴로 고객을 현장에서 연결하는<br />서비스</p>
+                  <h3 className="text-base md:text-lg font-bold text-[#3d2b1f] mb-1 md:mb-2 text-center relative z-10">프로모터</h3>
+                  <p className="text-xs md:text-sm text-[#6b4c1b] text-center relative z-10">브랜드의 얼굴로 고객을 현장에서 연결하는<br />서비스</p>
                 </div>
               </div>
             </div>
@@ -195,23 +205,23 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section className="h-screen flex items-center bg-white snap-start" id="projects">
+      <section className="h-screen flex items-center bg-[#FFFBEF] snap-start" id="projects">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-center mb-8 md:mb-16 text-gray-900">Projects</h2>
+          <h2 className="text-3xl md:text-5xl font-black text-center mb-8 md:mb-16 text-[#3d2b1f]">Projects</h2>
           <div className="max-w-4xl mx-auto text-center">
-            <p className="text-2xl md:text-3xl font-semibold text-gray-600">Coming Soon</p>
+            <p className="text-2xl md:text-3xl font-semibold text-[#6b4c1b]">Coming Soon</p>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="h-screen flex items-center bg-white snap-start">
+      <section id="contact" className="h-screen flex items-center bg-[#FFFBEF] snap-start">
         <div className="container mx-auto px-4 max-w-5xl">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-center mb-8 md:mb-16 text-gray-900">Contact</h2>
+          <h2 className="text-3xl md:text-5xl font-black text-center mb-8 md:mb-16 text-[#3d2b1f]">Contact</h2>
           <div className="max-w-2xl mx-auto">
-            <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6 bg-white p-6 md:p-8 rounded-lg shadow-lg">
+            <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6 bg-[#FFFBEF] p-6 md:p-8 rounded-lg shadow-lg">
               <div>
-                <label htmlFor="name" className="block text-base md:text-lg font-semibold text-gray-700 mb-2">
+                <label htmlFor="name" className="block text-base md:text-lg font-semibold text-[#3d2b1f] mb-2">
                   이름
                 </label>
                 <input
@@ -219,12 +229,12 @@ export default function Home() {
                   id="name"
                   value={formData.name}
                   onChange={(e) => setFormData({...formData, name: e.target.value})}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-[#bfae99] rounded-lg focus:ring-2 focus:ring-[#bfae99] focus:border-transparent bg-white text-[#3d2b1f]"
                   required
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-base md:text-lg font-semibold text-gray-700 mb-2">
+                <label htmlFor="email" className="block text-base md:text-lg font-semibold text-[#3d2b1f] mb-2">
                   이메일
                 </label>
                 <input
@@ -232,12 +242,12 @@ export default function Home() {
                   id="email"
                   value={formData.email}
                   onChange={(e) => setFormData({...formData, email: e.target.value})}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-[#bfae99] rounded-lg focus:ring-2 focus:ring-[#bfae99] focus:border-transparent bg-white text-[#3d2b1f]"
                   required
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-base md:text-lg font-semibold text-gray-700 mb-2">
+                <label htmlFor="message" className="block text-base md:text-lg font-semibold text-[#3d2b1f] mb-2">
                   메시지
                 </label>
                 <textarea
@@ -245,23 +255,23 @@ export default function Home() {
                   value={formData.message}
                   onChange={(e) => setFormData({...formData, message: e.target.value})}
                   rows={4}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-[#bfae99] rounded-lg focus:ring-2 focus:ring-[#bfae99] focus:border-transparent bg-white text-[#3d2b1f]"
                   required
                 />
               </div>
               <button
                 type="submit"
-                className="w-full bg-gray-900 text-white py-2 md:py-3 px-4 md:px-6 rounded-lg font-semibold hover:bg-gray-800 transition-colors duration-300 flex items-center justify-center gap-2 text-sm md:text-base"
+                className="w-full bg-[#bfae99] text-[#FFFBEF] py-2 md:py-3 px-4 md:px-6 rounded-lg font-black hover:bg-[#3d2b1f] hover:text-[#FFFBEF] transition-colors duration-300 flex items-center justify-center gap-2 text-sm md:text-base"
               >
                 <FaEnvelope className="text-base md:text-lg" />
                 Send
               </button>
             </form>
             <div className="mt-6 md:mt-8 text-center">
-              <p className="text-lg md:text-xl text-gray-600 mb-4">
+              <p className="text-lg md:text-xl text-[#6b4c1b] mb-4">
                 또는 직접 연락하기
               </p>
-              <p className="text-lg md:text-xl text-gray-600 mb-6 md:mb-8 font-semibold">
+              <p className="text-lg md:text-xl text-[#3d2b1f] mb-6 md:mb-8 font-semibold">
                 Email: admin@dlactive.com
               </p>
             </div>
@@ -270,25 +280,25 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#FFFBEF] text-[#a89b8e] py-16">
+      <footer className="bg-[#3d2b1f] text-white py-16 mt-16">
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-[#a89b8e] text-lg font-semibold mb-4">DL active</h3>
+            <h3 className="text-white text-lg font-semibold mb-4">DL active</h3>
             <p className="mb-2">서울특별시 강남구 선릉로 76길, 12 801호</p>
             <p>사업자등록번호: 275-81-03333</p>
           </div>
           <div>
-            <h3 className="text-[#a89b8e] text-lg font-semibold mb-4">Contact</h3>
+            <h3 className="text-white text-lg font-semibold mb-4">Contact</h3>
             <p className="mb-2">Tel: +82 10-5127-6476</p>
             <p>Email: admin@dlactive.com</p>
           </div>
           <div>
-            <h3 className="text-[#a89b8e] text-lg font-semibold mb-4">Legal</h3>
-            <Link href="/privacy-policy" className="block mb-2 hover:text-[#bfae99] transition-colors">개인정보처리방침</Link>
-            <Link href="/terms" className="block hover:text-[#bfae99] transition-colors">이용약관</Link>
+            <h3 className="text-white text-lg font-semibold mb-4">Legal</h3>
+            <Link href="/privacy-policy" className="block mb-2 hover:text-[#bfae99] transition-colors text-white">개인정보처리방침</Link>
+            <Link href="/terms" className="block hover:text-[#bfae99] transition-colors text-white">이용약관</Link>
           </div>
         </div>
-        <div className="container mx-auto px-4 mt-8 pt-8 border-t border-[#bfae99]">
+        <div className="container mx-auto px-4 mt-8 pt-8 border-t border-white">
           <p className="text-center text-sm">© 2025 DL active. All rights reserved.</p>
           <p className="text-center text-sm mt-2">Made by Jeun, DL active dev team</p>
         </div>

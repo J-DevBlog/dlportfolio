@@ -44,7 +44,7 @@ export default function Navigation() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-[#a89b8e]">
-            DL active
+            <span className="text-[#3d2b1f] font-black">DL</span> active
           </Link>
           
           {/* Mobile menu button */}
@@ -62,7 +62,7 @@ export default function Navigation() {
               onMouseEnter={() => setShowAboutDropdown(true)}
               onMouseLeave={() => setShowAboutDropdown(false)}
             >
-              <button className="text-[#a89b8e] hover:text-[#bfae99] flex items-center">
+              <button className="text-[#a89b8e] font-extrabold hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-[#a89b8e] flex items-center">
                 About <FaChevronDown className="ml-1 text-sm" />
               </button>
               <div className={`absolute left-0 mt-2 w-48 bg-[#f8f9fc] rounded-md shadow-lg py-1 transition-all duration-200 ${
@@ -70,13 +70,13 @@ export default function Navigation() {
               }`}>
                 <button 
                   onClick={() => scrollToSection('about')}
-                  className="block w-full text-left px-4 py-2 text-sm text-[#a89b8e] hover:bg-[#f0e9dd] hover:text-[#bfae99]"
+                  className="block w-full text-left px-4 py-2 text-sm text-[#a89b8e] font-extrabold hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-[#a89b8e] hover:bg-[#f0e9dd] hover:text-[#bfae99]"
                 >
                   About Us
                 </button>
                 <Link 
                   href="/team" 
-                  className="block px-4 py-2 text-sm text-[#a89b8e] hover:bg-[#f0e9dd] hover:text-[#bfae99]"
+                  className="block px-4 py-2 text-sm text-[#a89b8e] font-extrabold hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-[#a89b8e] hover:bg-[#f0e9dd] hover:text-[#bfae99]"
                   onClick={() => setShowAboutDropdown(false)}
                 >
                   Team
@@ -85,19 +85,19 @@ export default function Navigation() {
             </div>
             <button 
               onClick={() => scrollToSection('business')}
-              className="text-[#a89b8e] hover:text-[#bfae99]"
+              className="text-[#a89b8e] font-extrabold hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-[#a89b8e]"
             >
               Business
             </button>
             <button 
               onClick={() => scrollToSection('projects')}
-              className="text-[#a89b8e] hover:text-[#bfae99]"
+              className="text-[#a89b8e] font-extrabold hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-[#a89b8e]"
             >
               Projects
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="text-[#a89b8e] hover:text-[#bfae99]"
+              className="text-[#a89b8e] font-extrabold hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-[#a89b8e]"
             >
               Contact
             </button>

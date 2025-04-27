@@ -17,30 +17,48 @@ export default function Team() {
               각 분야의 전문성과 풍부한 경험을 바탕으로 최상의 서비스를 제공합니다
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden bg-gray-200">
-                {/* Add team member photo here */}
-                <div className="w-full h-full bg-gray-300"></div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            {/* 이동관 */}
+            <div className="bg-white rounded-2xl shadow-md p-8 flex flex-col items-center min-h-[80px] font-[pretendard]">
+              <div className="text-center">
+                <div className="font-bold text-base text-[#1a1f27] mb-1">이동관 / LEE DONG KWAN</div>
+                <div className="font-normal text-sm text-gray-400">Representative</div>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">이동관</h3>
-              <p className="text-gray-600 mb-2">CEO</p>
-              <p className="text-gray-500 text-sm">
-                15년간의 HR 컨설팅 경험을 바탕으로<br />
-                최적의 인재 매칭 서비스를 제공합니다.
-              </p>
             </div>
-            <div className="text-center">
-              <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden bg-gray-200">
-                {/* Add team member photo here */}
-                <div className="w-full h-full bg-gray-300"></div>
+            {/* 박진수 */}
+            <div className="bg-white rounded-2xl shadow-md p-8 flex flex-col items-center min-h-[80px] font-[pretendard]">
+              <div className="text-center">
+                <div className="font-bold text-base text-[#1a1f27] mb-1">박진수 / PARK JIN SU</div>
+                <div className="font-normal text-sm text-gray-400">Team Leader</div>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">박진수</h3>
-              <p className="text-gray-600 mb-2">COO / Developer</p>
-              <p className="text-gray-500 text-sm">
-                현장 운영 전문가로서<br />
-                체계적인 프로젝트 관리를 담당합니다.
-              </p>
+            </div>
+            {/* 정영록 */}
+            <div className="bg-white rounded-2xl shadow-md p-8 flex flex-col items-center min-h-[80px] font-[pretendard]">
+              <div className="text-center">
+                <div className="font-bold text-base text-[#1a1f27] mb-1">정영록 / JEONG YEONG ROK</div>
+                <div className="font-normal text-sm text-gray-400">Content Designer</div>
+              </div>
+            </div>
+            {/* 노용걸 */}
+            <div className="bg-white rounded-2xl shadow-md p-8 flex flex-col items-center min-h-[80px] font-[pretendard]">
+              <div className="text-center">
+                <div className="font-bold text-base text-[#1a1f27] mb-1">노용걸 / NO YONG GEOL</div>
+                <div className="font-normal text-sm text-gray-400">Operations Manager</div>
+              </div>
+            </div>
+            {/* 윤상준 */}
+            <div className="bg-white rounded-2xl shadow-md p-8 flex flex-col items-center min-h-[80px] font-[pretendard]">
+              <div className="text-center">
+                <div className="font-bold text-base text-[#1a1f27] mb-1">윤상준 / YOON SANG JUN</div>
+                <div className="font-normal text-sm text-gray-400">HR Manager</div>
+              </div>
+            </div>
+            {/* 이예림 */}
+            <div className="bg-white rounded-2xl shadow-md p-8 flex flex-col items-center min-h-[80px] font-[pretendard]">
+              <div className="text-center">
+                <div className="font-bold text-base text-[#1a1f27] mb-1">이예림 / LEE YE LIM</div>
+                <div className="font-normal text-sm text-gray-400">Admin Support</div>
+              </div>
             </div>
           </div>
         </div>
