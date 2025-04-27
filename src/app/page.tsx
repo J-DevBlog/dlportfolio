@@ -15,6 +15,7 @@ export default function Home() {
     email: '',
     message: ''
   });
+  const [hoveredProject, setHoveredProject] = useState<number | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,7 +45,7 @@ export default function Home() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    window.location.href = `mailto:your.email@example.com?subject=문의: ${formData.name}&body=${formData.message}%0D%0A%0D%0A보낸사람: ${formData.email}`;
+    window.location.href = `mailto:kwan@dlactive.com?subject=문의: ${formData.name}&body=${formData.message}%0D%0A%0D%0A보낸사람: ${formData.email}`;
   };
 
   if (isLoading) {
@@ -58,8 +59,8 @@ export default function Home() {
       {/* Hero Section */}
       <section className="h-screen flex items-center justify-center bg-[#FFFBEF] snap-start relative">
         <div className="text-center">
-          <h1 className="text-4xl md:text-6xl font-black text-[#222] mb-4 md:mb-6 tracking-tight font-[pretendard]">
-            DL <span className="text-2xl md:text-4xl text-[#3d2b1f] font-black">active</span>
+          <h1 className="text-6xl md:text-8xl font-black text-[#222] mb-4 md:mb-6 tracking-tight font-[pretendard] text-center">
+            DL <span className="text-4xl md:text-6xl text-[#3d2b1f] font-black">active</span>
           </h1>
           <p className="text-lg md:text-2xl text-[#222] mb-6 md:mb-8 leading-normal font-[pretendard] font-extrabold">
             사람과 기회를 연결하여, 더 나은 내일을 함께 만듭니다.

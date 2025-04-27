@@ -40,7 +40,7 @@ export default function Navigation() {
   };
 
   return (
-    <nav className={`fixed w-full bg-[#FFFBEF] z-50 transition-transform duration-300 ${showNav ? 'translate-y-0' : '-translate-y-full'}`}>
+    <nav className={`fixed w-full bg-[#3d2b1f]/90 z-50 transition-transform duration-300 ${showNav ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-[#a89b8e]">

@@ -1,6 +1,7 @@
 'use client';
 
 import Navigation from '@/components/Navigation';
+import Link from 'next/link';
 
 export default function Team() {
   return (
@@ -9,14 +10,6 @@ export default function Team() {
       <main className="pt-20 pb-20 flex-grow">
         <div className="container mx-auto px-4 max-w-6xl">
           <h2 className="text-5xl font-extrabold text-center mb-16 text-gray-900">Our Team</h2>
-          <div className="text-center mb-12">
-            <p className="text-xl text-gray-700 mb-4">
-              DL active의 전문가들이 여러분의 성공을 함께 만들어갑니다
-            </p>
-            <p className="text-lg text-gray-600">
-              각 분야의 전문성과 풍부한 경험을 바탕으로 최상의 서비스를 제공합니다
-            </p>
-          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {/* 이동관 */}
             <div className="bg-white rounded-2xl shadow-md p-8 flex flex-col items-center min-h-[80px] font-[pretendard]">
@@ -63,7 +56,7 @@ export default function Team() {
           </div>
         </div>
       </main>
-      <footer className="bg-[#1a1f27] text-gray-400 py-16">
+      <footer className="bg-[#3d2b1f] text-white py-16 mt-16">
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-white text-lg font-semibold mb-4">DL active</h3>
@@ -77,11 +70,11 @@ export default function Team() {
           </div>
           <div>
             <h3 className="text-white text-lg font-semibold mb-4">Legal</h3>
-            <p className="mb-2">개인정보처리방침</p>
-            <p>이용약관</p>
+            <Link href="/privacy-policy" className="block mb-2 hover:text-[#bfae99] transition-colors text-white">개인정보처리방침</Link>
+            <Link href="/terms" className="block hover:text-[#bfae99] transition-colors text-white">이용약관</Link>
           </div>
         </div>
-        <div className="container mx-auto px-4 mt-8 pt-8 border-t border-gray-800">
+        <div className="container mx-auto px-4 mt-8 pt-8 border-t border-white">
           <p className="text-center text-sm">© 2025 DL active. All rights reserved.</p>
           <p className="text-center text-sm mt-2">Made by Jeun, DL active dev team</p>
         </div>
