@@ -93,21 +93,22 @@ export default function Home() {
             ABOUT US
           </div>
           <div className="space-y-12 text-left">
-            <p className="text-2xl md:text-5xl font-black text-black whitespace-nowrap overflow-x-auto" style={{ fontFamily: 'Pretendard, Noto Sans KR, Helvetica, Arial, sans-serif', fontWeight: 700 }}>
+            <p className="text-2xl md:text-5xl font-black text-black" style={{ fontFamily: 'Pretendard, Noto Sans KR, Helvetica, Arial, sans-serif', fontWeight: 700 }}>
               최고의 인재와 기회를 이어주는 <span className="underline decoration-green-700 decoration-4 underline-offset-4">Creative Partner</span>
             </p>
             <p className="text-2xl md:text-5xl font-black text-black" style={{ fontFamily: 'Pretendard, Noto Sans KR, Helvetica, Arial, sans-serif', fontWeight: 700 }}>
-              고객사의 입장에 서서 공감을 통해 진실과 신뢰를 바탕으로 완벽한 행사를 함께 만들어내는
+              고객사의 입장에 서서 공감을 통해 진실과 신뢰를<br className="block md:hidden" /><span className="block md:inline mb-4"></span>
+              바탕으로 완벽한 행사를 함께 만들어내는
             </p>
-            <p className="mt-8">
+            <p className="mt-12">
               <span
-                className="font-black text-5xl md:text-8xl text-transparent whitespace-nowrap block"
+                className="font-extrabold text-5xl md:text-8xl text-transparent whitespace-nowrap block"
                 style={{
-                  WebkitTextStroke: '2px #3d2b1f',
+                  WebkitTextStroke: '1.2px #3d2b1f',
                   color: 'transparent',
                   display: 'inline-block',
                   fontFamily: 'Pretendard, Noto Sans KR, Helvetica, Arial, sans-serif',
-                  fontWeight: 900,
+                  fontWeight: 800,
                   letterSpacing: '0.04em',
                   lineHeight: 1.1
                 }}
@@ -208,7 +209,7 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section className="h-screen flex items-center bg-[#FFFBEF] snap-start" id="projects">
+      <section className="h-screen flex items-center bg-[#f3f4f6] snap-start" id="projects">
         <div className="container mx-auto px-4">
           <div className="relative flex justify-center items-center mb-8 md:mb-16">
             <h2 className="text-3xl md:text-5xl font-black text-center text-[#3d2b1f]">Projects</h2>
@@ -220,7 +221,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="h-screen flex items-center bg-[#FFFBEF] snap-start pt-40">
+      <section id="contact" className="h-screen flex items-center bg-[#fdf6ee] snap-start pt-40">
         <div className="container mx-auto px-4 max-w-5xl">
           <h2 className="text-3xl md:text-5xl font-black text-center mb-8 md:mb-16 text-[#3d2b1f]">Contact</h2>
           <div className="max-w-2xl mx-auto">

@@ -25,10 +25,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "DLactive | 사람과 기회를 연결하여, 더 나은 내일을 만듭니다.",
     description: "DLactive | 사람과 기회를 연결하여, 더 나은 내일을 만듭니다.",
-    url: "https://사이트주소.com/", // 실제 배포 주소로 변경 필요
+    url: "https://www.dlactive.com",
     siteName: "DLactive",
     type: "website",
-    // image: "https://사이트주소.com/og-image.jpg", // 필요시 이미지 경로 추가
+    // image: "https://www.dlactive.com/og-image.jpg", // 필요시 이미지 경로 추가
   },
   twitter: {
     card: "summary_large_image",
