@@ -216,7 +216,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="h-screen flex items-center bg-[#FFFBEF] snap-start pt-32">
+      <section id="contact" className="h-screen flex items-center bg-[#FFFBEF] snap-start pt-40">
         <div className="container mx-auto px-4 max-w-5xl">
           <h2 className="text-3xl md:text-5xl font-black text-center mb-8 md:mb-16 text-[#3d2b1f]">Contact</h2>
           <div className="max-w-2xl mx-auto">
