@@ -112,7 +112,7 @@ export default function Home() {
                   lineHeight: 1.1
                 }}
               >
-                "DL ACTIVE"
+                &quot;DL ACTIVE&quot;
               </span>
             </p>
           </div>
