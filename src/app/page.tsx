@@ -95,18 +95,18 @@ export default function Home() {
           <div className="space-y-12 text-left">
             <p className="text-2xl md:text-5xl font-black text-black" style={{ fontFamily: 'Pretendard, Noto Sans KR, Helvetica, Arial, sans-serif', fontWeight: 700 }}>
               최고의 인재와 기회를 이어주는<br />
-              <span className="font-bold relative custom-underline">Creative Partner</span>
+              <span className="font-extrabold relative custom-underline">Creative Partner</span>
             </p>
             <p className="text-2xl md:text-5xl font-black text-black" style={{ fontFamily: 'Pretendard, Noto Sans KR, Helvetica, Arial, sans-serif', fontWeight: 700 }}>
-              고객사의 입장에 서서 공감을 통해 진실과 신뢰를<br className="block md:hidden" /><span className="block md:inline mb-4"></span>
-              바탕으로 완벽한 행사를 함께 만들어내는
+              고객사의 입장에 서서<br />
+              공감을 통해 완벽을 함께 만드는
             </p>
             <p className="mt-12 relative inline-block">
               {/* 배경 타이포그래피 */}
               <span
-                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 select-none pointer-events-none z-0"
+                className="absolute left-[38%] top-1/2 -translate-x-[38%] -translate-y-1/2 select-none pointer-events-none z-0"
                 style={{
-                  fontSize: '13vw',
+                  fontSize: '11vw',
                   color: '#bfae99',
                   opacity: 0.12,
                   fontWeight: 900,
@@ -119,21 +119,23 @@ export default function Home() {
                 DL ACTIVE
               </span>
               {/* 전면 DL/active */}
-              <span className="relative z-10">
+              <span className="relative z-10 flex items-end" style={{ lineHeight: 1.2, overflow: 'visible', paddingTop: '0.5rem' }}>
                 <span
                   className="font-extrabold text-6xl md:text-8xl text-[#3d2b1f]"
                   style={{
                     fontFamily: 'Pretendard, Noto Sans KR, Helvetica, Arial, sans-serif',
                     letterSpacing: '0.04em',
+                    lineHeight: 1.2,
                   }}
                 >
                   DL
                 </span>
                 <span
-                  className="font-light text-3xl md:text-5xl text-[#3d2b1f] ml-2 align-bottom"
+                  className="font-light text-3xl md:text-5xl text-[#3d2b1f] ml-2"
                   style={{
                     fontFamily: 'Pretendard, Noto Sans KR, Helvetica, Arial, sans-serif',
                     letterSpacing: '0.04em',
+                    lineHeight: 1.2,
                   }}
                 >
                   active
@@ -152,7 +154,7 @@ export default function Home() {
             <div className="flex justify-center">
               <div className="flex flex-col items-center p-4 bg-[#FFFBEF] rounded-xl shadow-lg transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl relative overflow-hidden group mb-8 md:mb-12 inline-block">
                 <div className="absolute inset-0 bg-gradient-to-b from-[#f8f9fc] to-transparent opacity-50"></div>
-                <h3 className="text-2xl md:text-3xl font-bold text-center text-[#3d2b1f] relative z-10 px-4 tracking-tight">현장운영대행</h3>
+                <h3 className="text-2xl md:text-3xl font-bold text-center text-[#3d2b1f] relative z-10 px-4 tracking-tight">현장 운영 대행</h3>
               </div>
             </div>
             <div className="relative flex justify-center mb-8 md:mb-16">
