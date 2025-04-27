@@ -15,7 +15,6 @@ export default function Home() {
     email: '',
     message: ''
   });
-  const [hoveredProject, setHoveredProject] = useState<number | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -110,7 +109,7 @@ export default function Home() {
                   display: 'inline-block',
                 }}
               >
-                "DL ACTIVE"
+                &quot;DL ACTIVE&quot;
               </span>
             </p>
           </div>
