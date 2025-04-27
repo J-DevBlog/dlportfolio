@@ -89,27 +89,30 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="min-h-screen pt-32 pb-16 flex items-start bg-[#FFFBEF] snap-start">
         <div className="container ml-0 px-4 max-w-5xl">
-          <div className="text-black text-4xl md:text-6xl font-black tracking-widest mb-20 uppercase text-left drop-shadow">
+          <div className="text-black text-4xl md:text-6xl font-extrabold tracking-tight mb-20 uppercase text-left drop-shadow" style={{ fontFamily: 'Pretendard, Noto Sans KR, Helvetica, Arial, sans-serif', letterSpacing: '0.04em' }}>
             ABOUT US
           </div>
           <div className="space-y-12 text-left">
-            <p className="text-3xl md:text-5xl font-black text-black">
-              최고의 인재와 기회를 이어주는<br />
-              <span className="underline decoration-green-700 decoration-4 underline-offset-4">Creative Partner</span>
+            <p className="text-2xl md:text-5xl font-black text-black whitespace-nowrap overflow-x-auto" style={{ fontFamily: 'Pretendard, Noto Sans KR, Helvetica, Arial, sans-serif', fontWeight: 700 }}>
+              최고의 인재와 기회를 이어주는 <span className="underline decoration-green-700 decoration-4 underline-offset-4">Creative Partner</span>
             </p>
-            <p className="text-3xl md:text-5xl font-black text-black">
+            <p className="text-2xl md:text-5xl font-black text-black" style={{ fontFamily: 'Pretendard, Noto Sans KR, Helvetica, Arial, sans-serif', fontWeight: 700 }}>
               고객사의 입장에 서서 공감을 통해 진실과 신뢰를 바탕으로 완벽한 행사를 함께 만들어내는
             </p>
-            <p className="text-3xl md:text-5xl font-black text-black mt-8">
+            <p className="mt-8">
               <span
-                className="font-black text-7xl md:text-8xl text-transparent"
+                className="font-black text-5xl md:text-8xl text-transparent whitespace-nowrap block"
                 style={{
                   WebkitTextStroke: '2px #3d2b1f',
                   color: 'transparent',
                   display: 'inline-block',
+                  fontFamily: 'Pretendard, Noto Sans KR, Helvetica, Arial, sans-serif',
+                  fontWeight: 900,
+                  letterSpacing: '0.04em',
+                  lineHeight: 1.1
                 }}
               >
-                &quot;DL ACTIVE&quot;
+                "DL ACTIVE"
               </span>
             </p>
           </div>
@@ -208,12 +211,10 @@ export default function Home() {
       <section className="h-screen flex items-center bg-[#FFFBEF] snap-start" id="projects">
         <div className="container mx-auto px-4">
           <div className="relative flex justify-center items-center mb-8 md:mb-16">
-            <h2 className="text-3xl md:text-5xl font-black text-center text-[#3d2b1f] z-10">Projects</h2>
-            <img src="/images/circle.png" alt="circle" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 pointer-events-none select-none z-0" />
+            <h2 className="text-3xl md:text-5xl font-black text-center text-[#3d2b1f]">Projects</h2>
           </div>
-          <div className="max-w-4xl mx-auto text-center relative flex justify-center items-center">
-            <p className="text-2xl md:text-3xl font-semibold text-[#6b4c1b] z-10">Coming Soon</p>
-            <img src="/images/circle.png" alt="circle" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 pointer-events-none select-none z-0" />
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-2xl md:text-3xl font-semibold text-[#6b4c1b]">Coming Soon</p>
           </div>
         </div>
       </section>
