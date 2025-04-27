@@ -89,12 +89,13 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="min-h-screen pt-32 pb-16 flex items-start bg-[#FFFBEF] snap-start">
         <div className="container ml-0 px-4 max-w-5xl">
-          <div className="text-black text-4xl md:text-6xl font-extrabold tracking-tight mb-20 uppercase text-left drop-shadow" style={{ fontFamily: 'Pretendard, Noto Sans KR, Helvetica, Arial, sans-serif', letterSpacing: '0.04em' }}>
+          <div className="text-black text-4xl md:text-6xl font-extrabold tracking-tight mb-32 uppercase text-left drop-shadow" style={{ fontFamily: 'Pretendard, Noto Sans KR, Helvetica, Arial, sans-serif', letterSpacing: '0.04em' }}>
             ABOUT US
           </div>
           <div className="space-y-12 text-left">
             <p className="text-2xl md:text-5xl font-black text-black" style={{ fontFamily: 'Pretendard, Noto Sans KR, Helvetica, Arial, sans-serif', fontWeight: 700 }}>
-              최고의 인재와 기회를 이어주는 <span className="underline decoration-green-700 decoration-4 underline-offset-4">Creative Partner</span>
+              최고의 인재와 기회를 이어주는<br />
+              <span className="underline decoration-green-700 decoration-4 underline-offset-4">Creative Partner</span>
             </p>
             <p className="text-2xl md:text-5xl font-black text-black" style={{ fontFamily: 'Pretendard, Noto Sans KR, Helvetica, Arial, sans-serif', fontWeight: 700 }}>
               고객사의 입장에 서서 공감을 통해 진실과 신뢰를<br className="block md:hidden" /><span className="block md:inline mb-4"></span>
