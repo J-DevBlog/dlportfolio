@@ -208,9 +208,13 @@ export default function Home() {
       {/* Projects Section */}
       <section className="h-screen flex items-center bg-[#FFFBEF] snap-start" id="projects">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-5xl font-black text-center mb-8 md:mb-16 text-[#3d2b1f]">Projects</h2>
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-2xl md:text-3xl font-semibold text-[#6b4c1b]">Coming Soon</p>
+          <div className="relative flex justify-center items-center mb-8 md:mb-16">
+            <h2 className="text-3xl md:text-5xl font-black text-center text-[#3d2b1f] z-10">Projects</h2>
+            <img src="/images/circle.png" alt="circle" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 pointer-events-none select-none z-0" />
+          </div>
+          <div className="max-w-4xl mx-auto text-center relative flex justify-center items-center">
+            <p className="text-2xl md:text-3xl font-semibold text-[#6b4c1b] z-10">Coming Soon</p>
+            <img src="/images/circle.png" alt="circle" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 pointer-events-none select-none z-0" />
           </div>
         </div>
       </section>
