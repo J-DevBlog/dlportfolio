@@ -2,8 +2,8 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 255, 251, 239;
+  --background-end-rgb: 255, 251, 239;
 }
 
 @theme inline {
@@ -21,15 +21,10 @@
   }
 }
 
-body {
+body, html {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(var(--background-start-rgb));
+  font-family: 'Pretendard', 'Noto Sans KR', Helvetica, Arial, sans-serif;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -55,6 +50,86 @@ body {
     @apply scroll-smooth;
   }
   body {
-    @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-white;
+    @apply bg-[#FFFBEF] dark:bg-gray-900 text-gray-900 dark:text-white;
   }
+}
+/* ㄷ active 애니메이션 */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+    text-shadow: 0 0 10px rgba(253, 224, 71, 0.7);
+  }
+}
+
+.dl-container {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to right, #1a365d, #304b7d);
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dl-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.dl-text {
+  font-weight: bold;
+  color: white;
+  animation: float 3s ease-in-out infinite;
+}
+
+.active-text {
+  font-weight: bold;
+  color: #fde047;
+  animation: pulse 2s infinite;
+}
+
+.shine-effect {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 30px;
+  background: linear-gradient(to right, 
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%, 
+    rgba(255, 255, 255, 0) 100%);
+  transform: skewX(-30deg);
+  animation: shine 3s infinite;
+}
+
+.custom-underline::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0; right: 0; bottom: -1px;
+  height: 8px;
+  background: url('data:image/svg+xml;utf8,<svg width="100%25" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M0,6 Q40,2 80,6 T160,6 T240,6 T320,6 T400,6" stroke="%23000" stroke-width="3" fill="none" /></svg>') repeat-x;
+  background-size: 100% 8px;
+  pointer-events: none;
 }

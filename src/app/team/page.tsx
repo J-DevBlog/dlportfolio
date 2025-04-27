@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function Team() {
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col">
+    <div className="min-h-screen bg-[#F6F6F3] flex flex-col">
       <Navigation />
       <main className="pt-20 pb-20 flex-grow">
         <div className="container mx-auto px-4 max-w-6xl">

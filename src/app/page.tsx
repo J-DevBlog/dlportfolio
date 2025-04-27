@@ -95,26 +95,49 @@ export default function Home() {
           <div className="space-y-12 text-left">
             <p className="text-2xl md:text-5xl font-black text-black" style={{ fontFamily: 'Pretendard, Noto Sans KR, Helvetica, Arial, sans-serif', fontWeight: 700 }}>
               최고의 인재와 기회를 이어주는<br />
-              <span className="underline decoration-green-700 decoration-4 underline-offset-4">Creative Partner</span>
+              <span className="font-bold relative custom-underline">Creative Partner</span>
             </p>
             <p className="text-2xl md:text-5xl font-black text-black" style={{ fontFamily: 'Pretendard, Noto Sans KR, Helvetica, Arial, sans-serif', fontWeight: 700 }}>
               고객사의 입장에 서서 공감을 통해 진실과 신뢰를<br className="block md:hidden" /><span className="block md:inline mb-4"></span>
               바탕으로 완벽한 행사를 함께 만들어내는
             </p>
-            <p className="mt-12">
+            <p className="mt-12 relative inline-block">
+              {/* 배경 타이포그래피 */}
               <span
-                className="font-extrabold text-5xl md:text-8xl text-transparent whitespace-nowrap block"
+                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 select-none pointer-events-none z-0"
                 style={{
-                  WebkitTextStroke: '1.2px #3d2b1f',
-                  color: 'transparent',
-                  display: 'inline-block',
-                  fontFamily: 'Pretendard, Noto Sans KR, Helvetica, Arial, sans-serif',
-                  fontWeight: 800,
+                  fontSize: '13vw',
+                  color: '#bfae99',
+                  opacity: 0.12,
+                  fontWeight: 900,
+                  whiteSpace: 'nowrap',
                   letterSpacing: '0.04em',
-                  lineHeight: 1.1
+                  userSelect: 'none',
+                  fontFamily: 'Pretendard, Noto Sans KR, Helvetica, Arial, sans-serif',
                 }}
               >
-                &quot;DL ACTIVE&quot;
+                DL ACTIVE
+              </span>
+              {/* 전면 DL/active */}
+              <span className="relative z-10">
+                <span
+                  className="font-extrabold text-6xl md:text-8xl text-[#3d2b1f]"
+                  style={{
+                    fontFamily: 'Pretendard, Noto Sans KR, Helvetica, Arial, sans-serif',
+                    letterSpacing: '0.04em',
+                  }}
+                >
+                  DL
+                </span>
+                <span
+                  className="font-light text-3xl md:text-5xl text-[#3d2b1f] ml-2 align-bottom"
+                  style={{
+                    fontFamily: 'Pretendard, Noto Sans KR, Helvetica, Arial, sans-serif',
+                    letterSpacing: '0.04em',
+                  }}
+                >
+                  active
+                </span>
               </span>
             </p>
           </div>
